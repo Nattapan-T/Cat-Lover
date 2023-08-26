@@ -1,42 +1,104 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* Bordered form */
+form {
+  border: 2px solid #fff;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  width: 450px;
+  padding: 40px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  margin: auto;
+}
+
+.center {
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.App-header h1 {
+  font-size: 7.5em;
+  line-height: 1;
+  color: #000000;
+  margin-bottom: 0.1em;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.App-header h2 {
+  font-size: 2em;
+  line-height: 1.1;
+  color: #000000;
+  margin-bottom: 0.5em;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 20px;
+  line-height: 1.5;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #40e0d0;
+}
+
+button {
+  background: #00bfff;
+  color: #ffffff;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  transition: background-color 0.5s ease, opacity 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(to bottom, #00bfff, #87ceeb);
+  opacity: 0.8;
+}
+
+.action-button {
+  background: #00bfff;
+  color: #ffffff;
+  padding: 10px 20px;
+  margin: 10px auto;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 19px;
+  font-weight: bold;
+  display: block;
+  width: 30%;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.action-button:hover {
+  background: linear-gradient(to bottom, #00bfff, #87ceeb);
+  opacity: 0.8;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  z-index: -1;
+}
+
+/* The "Forgot password" text */
+@media screen and (max-width: 600px) {
+  span.psw {
+    display: block;
+    float: none;
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }

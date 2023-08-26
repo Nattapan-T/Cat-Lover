@@ -22,9 +22,15 @@ function CatDisplay({ onLogout }: CatDisplayProps) {
   };
   return (
     <div>
-      <button onClick={fetchImage}>Reload Cat Image</button>
-      <button onClick={onLogout}>Logout</button>
-      {catImage && <img src={catImage} alt="Cat" />}
+      <div className="image-container">
+        {catImage && <img src={catImage} alt="Cat" />}
+      </div>
+      <button className="action-button" onClick={fetchImage}>
+        Reload Cat Image
+      </button>
+      <button className="action-button" onClick={onLogout}>
+        Logout
+      </button>
     </div>
   );
 }
