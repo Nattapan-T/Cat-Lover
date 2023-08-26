@@ -1,4 +1,7 @@
-/* Bordered form */
+* {
+  font-family: monospace;
+}
+
 form {
   border: 2px solid #fff;
   background-color: rgba(255, 255, 255, 0.9);
@@ -14,17 +17,18 @@ form {
 }
 
 .App-header h1 {
-  font-size: 7.5em;
+  font-size: 5.56rem;
   line-height: 1;
-  color: #000000;
-  margin-bottom: 0.1em;
+  color: black;
+  font-family: fantasy;
+  margin-top: 3dvh;
 }
 
 .App-header h2 {
-  font-size: 2em;
+  font-size: 1.9rem;
   line-height: 1.1;
-  color: #000000;
-  margin-bottom: 0.5em;
+  color: black;
+  margin-bottom: 3dvh;
 }
 
 input[type="text"],
@@ -56,6 +60,7 @@ button {
   width: 100%;
   font-size: 20px;
   font-weight: bold;
+  font-family: 'revert';
   transition: background-color 0.5s ease, opacity 0.3s ease;
 }
 
@@ -85,20 +90,32 @@ button:hover {
 }
 
 .image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 70vh;
-  max-width: 100%;
+  text-align: center;
   position: relative;
-  margin: auto;
   z-index: -1;
 }
+.image-container img{
+  max-height:60dvh;
+  max-width:80dvw;
+  height:auto;
+  width:auto;
+}
 
-/* The "Forgot password" text */
-@media screen and (max-width: 600px) {
-  span.psw {
-    display: block;
-    float: none;
+
+@media screen and (min-width:300px) and (max-width:799px){
+  html {
+    font-size: 8px !important;
+  }
+  form {
+    width: 85%;
+  }
+  .action-button {
+    width: 60dvw;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 16px !important;
   }
 }

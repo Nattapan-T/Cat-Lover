@@ -18,7 +18,7 @@ function LoginForm({ onLogin }: Props) {
   return (
     <form onSubmit={handleSubmit}>
       <h2>Login</h2>
-      <label>
+      <label style={{ fontSize: 17 }}>
         Username:
         <input
           type="text"
@@ -27,7 +27,7 @@ function LoginForm({ onLogin }: Props) {
         />
       </label>
       <br />
-      <label>
+      <label style={{ fontSize: 17 }}>
         Password:
         <input
           type="password"

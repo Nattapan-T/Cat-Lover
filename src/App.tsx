@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="center">Cat Lover</h1>
+        <h1 className="center">🐾 Cat Lover 🐾</h1>
         <h2 className="center">Like The cat that got the cream</h2>
         {loggedIn ? (
           <CatDisplay onLogout={handleLogout} />
