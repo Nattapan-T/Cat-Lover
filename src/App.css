@@ -1,5 +1,5 @@
 * {
-  font-family: monospace;
+  font-family: "Trebuchet MS";
 }
 
 form {
@@ -17,10 +17,10 @@ form {
 }
 
 .App-header h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   line-height: 1;
   color: black;
-  font-family: fantasy;
+  font-family:"Courier New";
   margin-top: 3dvh;
 }
 
@@ -39,7 +39,7 @@ input[type="password"] {
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.5;
   transition: border-color 0.3s ease;
 }
@@ -60,7 +60,6 @@ button {
   width: 100%;
   font-size: 19px;
   font-weight: bold;
-  font-family: inherit;
   transition: background-color 0.5s ease, opacity 0.3s ease;
 }
 
