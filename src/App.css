@@ -17,7 +17,7 @@ form {
 }
 
 .App-header h1 {
-  font-size: 5.56rem;
+  font-size: 5.2rem;
   line-height: 1;
   color: black;
   font-family: fantasy;
@@ -110,7 +110,7 @@ button:hover {
     width: 85%;
   }
   .action-button {
-    width: 60dvw;
+    width: 70dvw;
   }
 }
 
